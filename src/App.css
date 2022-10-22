@@ -1,38 +1,140 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: rgb(234, 234, 234);
+  color: black;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  padding: 15px 0;
+}
+
+.main-container {
+  box-sizing: border-box;
+  background-color: white;
+  width: 65vw;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.upper-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.middle-container {
+  /* box-sizing: border-box; */
+  width: 92%;
+  margin: auto;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lower-container {
+  position: relative;
+  margin-top: 7px;
+  box-sizing: border-box;
+  background-color: rgb(212, 212, 212);
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.item-template {
+  margin-top: 5px;
+  background-color: #d8d8d8;
+  box-sizing: border-box;
+  width: 100%;
+  color: black;
+  border-radius: 7px;
+}
+
+.item-content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.btn {
+  background-color: #808080;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #080808;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  cursor: pointer;
+  background-color: #a8a8a8;
+  border: 1px solid #080808;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonIn {
+  position: relative;
+  /* border: 1px solid green; */
+}
+
+.mergeIn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cross-btn {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
+  background-color: #989898;
+  border: 1px solid black;
+  font-weight: bolder;
+  margin-right: 5px;
+
+  border-radius: 50%;
+}
+
+.cross-btn:hover {
+  background-color: #b0b0b0;
+  cursor: pointer;
+}
+
+#input-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 2px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #909090;
+}
+
+#input-container:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #909090;
+}
+
+#submit-btn {
+  position: absolute;
+  top: 7.5px;
+  right: 8px;
+  z-index: 2;
+}
+
+#delete-all-btn {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+  width: 80px;
+  z-index: 2;
 }
